@@ -1,0 +1,20 @@
+.food {
+	background-image: url(../img/background-1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Londrina Shadow', cursive;
+	font-size: 60px;
+	color: #cd5638;
+	text-align: center;
+	padding-top: 150px;
+	height: 800px;
+
+}
+
+.food h1 {
+	background-color: rgba(200, 216, 91, .6);
+	padding: 20px 0;
+	position: relative;
+	animation: fade-in 1.5s;
+}
+

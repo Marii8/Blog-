@@ -1,0 +1,430 @@
+body {
+	font-family: arial, sans-serif;
+}
+
+header {
+	background-color: #70b062;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #dbdf19;
+}
+
+.header-left {
+	margin-left: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	font-family: 'Londrina Shadow', cursive;
+	font-size: 60px;
+	margin-bottom: 35px;
+	margin-left: 80px;
+
+	padding: 20px;
+	font-weight: bold;
+	color: #f7f39c;
+
+	position: relative;
+	animation: fade-in 1.5s;
+
+	background: linear-gradient(rgba(35, 63, 81, .5), rgba(221, 157, 191, .5));
+}
+
+.icon {
+	height: 60px;
+}
+.header-left span strong {
+	color: #f7f39c;
+}
+
+.header-right {
+	display: flex;
+	margin-right: 80px;
+
+}
+
+.header-right li:first-child{
+	margin-right: 25px;
+}
+
+/**/
+/*PAGE TOP*/
+/**/
+.top {
+	height: 500px;
+	color: #f7f39c;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bg {
+	background-image: url(../img/background-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.profile {
+	width: 200px;
+	height: 400px;
+	margin-right: 80px;
+	padding: 30px 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: rgba(112, 176, 98, .4);
+	position: relative;
+	animation: move-r 1.5s;
+}
+
+/*.animation {*/
+	/*animation-name: from-right;*/
+	/*animation-duration: 2s;*/
+	/*animation-timing-function: ease-out; /*ゆっくり終わる*/
+	/*animation-iteration-count: 1;*/
+	/*animation-direction: normal;*/
+	/*animation-fill-mode: forwards;*/
+	/*アニメーション終了時に元の状態に戻らない。*/
+/*}*/
+
+/*@keyframes 0から100まで順番にどういった振る舞いをしていくかを指定できる。*/
+@keyframes move-r {
+	0% {right: -600px;}
+	100% {right: 0;}
+}
+/*
+@keyframes move-l {
+	0% {left: -600px;}
+	100% {left: 0;}
+}
+
+@keyframes move-t {
+	0% {top: -300px;}
+	100% {top: 0;}
+}
+*/
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		top: 300px;
+	}
+	100% {
+		opacity: 1;
+		top: 0;}
+}
+
+.profile h2 {
+	font-size: 35px;
+	font-family: 'Londrina Shadow', cursive;
+}
+
+.profile-img {
+	width: 130px;
+	height: 133px;
+	border-radius: 50%;
+	margin-top: 10px;
+	object-fit: cover;
+}
+
+.profile p {
+	color:  #233f51;
+
+}
+
+/*MY FAVORITES*/
+
+.my-favorite {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(-45deg, rgba(205, 86, 56, 0.8), rgba(107, 182, 187, 0.8)) fixed, url(../img/travel.jpg) fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.sub-title {
+	font-family: 'Londrina Shadow', cursive;
+	padding-top: 25px;
+	font-size: 35px;
+}
+
+.favorite {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 25px;
+}
+
+.favorite li {
+	margin-right: 35px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 25px;
+
+}
+.favorite li:last-child {
+	margin-right: 0px;
+}
+.favorite li h2 {
+	text-align: center;
+	margin: 20px 0px;
+}
+.favorite .btn {
+	font-size: 18px;
+	padding: 5px 0px;
+	border-radius: 8px;
+	width: 150px;
+	color: #f7f39c;
+	background-color: #6bb6bb;
+	border-color: #6bb6bb;
+	box-shadow: 0 4px #627295;
+	transition-duration: .2s;
+	cursor: pointer;
+
+}
+
+.btn:hover {
+	background-color: #233f51;
+	border-color: #6bb6bb;
+	color: #6bb6bb;
+	transition-duration: .2s;
+}
+
+.btn:active {
+	position: relative;
+	top: 4px;
+	box-shadow: none;
+}
+
+
+
+.favorite li img {
+	width: 200px;
+	height: 400px;
+	object-fit: cover;
+	/*画像のtortureを補正する。*/
+	box-shadow: 10px 10px 5px rgba(35, 63, 81, 0.5);
+}
+.favorite li:last-child img{
+	object-position: 40% 0;
+}
+
+
+/*DREAM*/
+.my-dream {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 25px;
+}
+
+.wrapper {
+	width: 650px;
+	height: 500px;
+	margin-top: 25px;
+	font-family: 'Caveat', cursive;
+	font-size: 25px;
+}
+
+.wrapper p {
+	display: inline-block;
+	padding: 20px 20px;
+	text-decoration: none;
+}
+
+.oblong {
+	width: 300px;
+	height: 150px;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+.vertical {
+	width: 150px;
+	height: 325px;
+	background-color: red;
+	box-sizing: border-box;
+}
+.square {
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+	box-sizing: border-box;
+}
+
+
+.oblong:hover,
+.vertical:hover,
+.square:hover {
+	position: relative;
+	top: -10px;
+	left: 10px;
+	cursor: pointer;
+
+	box-shadow: -10px 10px 10px rgba(35, 63, 81, 0.5);
+	transition: .3s;
+}
+
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*FLOAT LAYOUT*/
+.education {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	background-color: #f8e133;
+}
+
+.marathon {
+	float: left;
+	margin-bottom: 25px;
+	background-image: url(../img/marathon-runner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 70% 50%;
+}
+.diving {
+	float: right;
+	background-image: url(../img/diving-2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.fitness {
+	float: left;
+	margin-right: 25px;
+	background-image: url(../img/fitness.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 75% 50%;
+	color: #c8d85b;
+}
+
+
+.samba {
+	float: right;
+	background-color: #cd5638;
+}
+
+.animal {
+	margin-bottom: 25px;
+	background-image: url(../img/animal-shelter.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #cd5638;
+}
+.phytotherapy {
+	background-image: url(../img/gardening.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*BOTTOM*/
+.bottom {
+	background: linear-gradient( #233f51, #a979ad);
+	padding-top: 25px;
+	height: 400px;
+}
+
+.bottom-wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.headline {
+	font-size: 35px;
+	margin-bottom: 25px;
+	text-align: center;
+	font-family: 'Londrina Shadow', cursive;
+	color: #6bb6bb;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.sns {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+input, textarea, select {
+	width: 200px;
+	height: 30px;
+	margin-bottom: 15px;
+}
+
+.submit {
+	background-color: #6bb6bb;
+	border-color: #6bb6bb;
+	color: #f7f39c;
+	font-size: 18px;
+	font-family:'Londrina Shadow', cursive;
+	border-radius: 8px;
+	width: 150px;
+	height: 45px;
+	cursor: pointer;
+	box-shadow: 0 10px #f7f39c;
+}
+
+.submit:hover {
+	background-color: #cd5638;
+	border-color: #cd5638;
+	color: #f7f39c;
+}
+
+.submit:active {
+	position: relative;
+	top: 10px;
+	box-shadow: none;
+}
+
+
+.portfolio li{
+	width: 200px;
+	height: 30px;
+	font-size: 18px;
+	margin-top: 15px;
+	border-bottom: dashed 1px #6bb6bb;
+}
+
+.youtube {
+	margin-top: 25px;
+}
+
+/*FOOTER*/
+footer {
+	background-color: #7f7eb8;
+}
+
+.copyright {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
