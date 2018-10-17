@@ -70,6 +70,20 @@ header {
 	background-attachment: fixed;
 }
 
+/*backgroundを暗くする方法
+.bg::before{
+黒い背景を入れる。
+
+z-index: ;
+defaultはauto後から書いた要素が上に来る。
+数字が大きいほど前へ
+背景より前、文字より後ろに調整する。
+
+backgrounf: inherite; 背景で指定しないと文字までぼやけてしまう。
+filter: blur;
+*/
+
+
 .profile {
 	width: 200px;
 	height: 400px;
@@ -199,12 +213,37 @@ header {
 	border-color: #6bb6bb;
 	color: #6bb6bb;
 	transition-duration: .2s;
+	transform: rotatesY(360deg);
 }
+
 
 .btn:active {
 	position: relative;
 	top: 4px;
 	box-shadow: none;
+}
+
+.circle:active{
+	animation: circle 1.5s ease-out;
+}
+
+@keyframes circle {
+	0% {
+		width: 10px;
+		height: 10px;
+		text-align: center;
+		border-radius: 50%;
+		border: solid 3px #233f51;
+	}
+
+	100% {
+		width: 40px;
+		height: 40px;
+		text-align: center:
+		border-radius: 50%;
+		border: solid 1px #f8e133;
+		opacity: 0.4;
+	}
 }
 
 
