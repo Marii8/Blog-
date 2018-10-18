@@ -3,11 +3,11 @@ body {
 }
 
 header {
-	background-color: #70b062;
+	background: linear-gradient(-180deg, #e6d9b9, #b59a4d);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color: #dbdf19;
+	color: #665e51;
 }
 
 .header-left {
@@ -37,7 +37,7 @@ header {
 	height: 60px;
 }
 .header-left span strong {
-	color: #f7f39c;
+	color: #149bdf;
 }
 
 .header-right {
@@ -161,7 +161,7 @@ filter: blur;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(-45deg, rgba(205, 86, 56, 0.8), rgba(107, 182, 187, 0.8)) fixed, url(../img/travel.jpg) fixed;
+	background: circle-gradient(#f8e133 #70b062);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -285,33 +285,28 @@ filter: blur;
 .oblong {
 	width: 300px;
 	height: 150px;
-	background-color: #fff;
 	box-sizing: border-box;
 }
 .vertical {
 	width: 150px;
 	height: 325px;
-	background-color: red;
 	box-sizing: border-box;
 }
 .square {
 	width: 150px;
 	height: 150px;
-	background-color: blue;
 	box-sizing: border-box;
 }
+
+
+
 
 
 .oblong:hover,
 .vertical:hover,
 .square:hover {
-	position: relative;
-	top: -10px;
-	left: 10px;
 	cursor: pointer;
 
-	box-shadow: -10px 10px 10px rgba(35, 63, 81, 0.5);
-	transition: .3s;
 }
 
 
@@ -327,6 +322,8 @@ filter: blur;
 	margin-right: 25px;
 	margin-bottom: 25px;
 	background-color: #f8e133;
+	z-index: 0;
+	position: relative;
 }
 
 .marathon {
@@ -336,12 +333,16 @@ filter: blur;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 70% 50%;
+	z-index: 0;
+	position: relative;
 }
 .diving {
 	float: right;
 	background-image: url(../img/diving-2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	z-index: 0;
+	position: relative;
 }
 .fitness {
 	float: left;
@@ -351,12 +352,16 @@ filter: blur;
 	background-repeat: no-repeat;
 	background-position: 75% 50%;
 	color: #c8d85b;
+	z-index: 0;
+	position: relative;
 }
 
 
 .samba {
 	float: right;
 	background-color: #cd5638;
+	z-index: 0;
+	position: relative;
 }
 
 .animal {
@@ -365,16 +370,31 @@ filter: blur;
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: #cd5638;
+	z-index: 0;
+	position: relative;
 }
+
 .phytotherapy {
 	background-image: url(../img/gardening.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	z-index: 0;
+	position: relative;
 }
+
+
+.blur:before {
+	content: "";
+	background: inherit;
+	filter: blur(5px);
+	position: absolute;
+	z-index: -1;
+}
+
 
 /*BOTTOM*/
 .bottom {
-	background: linear-gradient( #233f51, #a979ad);
+	background: linear-gradient( #ba9648, #ba7d8c);
 	padding-top: 25px;
 	height: 400px;
 }
@@ -391,7 +411,7 @@ filter: blur;
 	margin-bottom: 25px;
 	text-align: center;
 	font-family: 'Londrina Shadow', cursive;
-	color: #6bb6bb;
+	color: #665e51;
 }
 
 .contact {
@@ -446,10 +466,10 @@ input, textarea, select {
 
 .portfolio li{
 	width: 200px;
-	height: 30px;
+	height: 35px;
 	font-size: 18px;
 	margin-top: 15px;
-	border-bottom: dashed 1px #6bb6bb;
+	border-bottom: dashed 2px #665e51;
 }
 
 .youtube {
